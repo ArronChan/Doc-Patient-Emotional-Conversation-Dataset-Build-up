@@ -36,7 +36,8 @@ def main():
             os.mkdir(chopFacePath)
             os.mkdir(os.path.join(outputPath,'keyExpFrame'))
             with open(os.path.join(outputPath,'conversation.txt'),'w+',encoding='UTF-8') as f:
-                f.write("")
+                f.write("P: \n")
+                f.write("D: ")
             vid = cv2.VideoCapture(videoPath)
             idx = 0
             print(videoName+' 正在截取……')
